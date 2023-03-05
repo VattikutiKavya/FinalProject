@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "5e8ecef2-b88a-46dc-9c08-a9f9d4aa5050",
+		"name": "finalProject Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/add-student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"Ravi\",\n        \"unit1\": 63,\n        \"unit2\": 54,\n        \"unit3\": 76,\n        \"unit4\": 89,\n        \"unit5\": 51\n    },\n    {\n        \"name\": \"SaiKiran\",\n        \"unit1\": 45,\n        \"unit2\": 48,\n        \"unit3\": 41,\n        \"unit4\": 62,\n        \"unit5\": 59\n    },\n    {\n        \"name\": \"Krishna\",\n        \"unit1\": 75,\n        \"unit2\": 68,\n        \"unit3\": 89,\n        \"unit4\": 82,\n        \"unit5\": 79\n    },\n    {\n        \"name\": \"Bhargav\",\n        \"unit1\": 71,\n        \"unit2\": 56,\n        \"unit3\": 63,\n        \"unit4\": 51,\n        \"unit5\": 68\n    },\n    {\n        \"name\": \"Praveen\",\n        \"unit1\": 79,\n        \"unit2\": 69,\n        \"unit3\": 75,\n        \"unit4\": 72,\n        \"unit5\": 68\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/add-student",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"add-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/find-all-students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/find-all-students",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"find-all-students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/update-student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"Praveen\",\n        \"unit1\": 85\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/update-student",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/delete-student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Praveen\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/delete-student",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/find-student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"sriram\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/find-student",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"find-student"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
